@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>shinwoosystem</title>
+</head>
+<body>
+게시글 삭제하기 페이지입니다.
+<br><br>
+<ul>
+    <li>
+        <span th:text="${title}"></span>
+        <form action="/board-delete/1" method="post" style="display:inline;">
+            <button type="submit">삭제</button>
+        </form>
+    </li>
+</ul>
+
+<a href="/board-list">목록으로 돌아가기</a>
+</body>
+</html>
