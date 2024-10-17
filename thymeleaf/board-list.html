@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>(주)신우시스템</title>
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/그림1.png" />
+    <link href="css/board-list.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <div class="sub-menu">
+        <ul class="menu">
+          <li><a th:href="@{/main.html}">Home</a></li>
+          <li><a th:href="@{/login.html}">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="wrapper">
+        <div class="max-width-wrapper">
+          <a th:href="@{/main.html}">
+            <img th:src="@{/static/images/new_logo3.png}" alt="신우시스템" />
+          </a>
+
+          <div class="main-menu">
+            <nav>
+              <ul>
+                <li>
+                  <a th:href="@{/part1.html}">신우시스템</a>
+                  <ul>
+                    <li><a th:href="@{/part1.html}">CEO인사말</a></li>
+                    <li><a th:href="@{/part2.html}">회사개요</a></li>
+                    <li><a th:href="@{/part3.html}">연혁</a></li>
+                    <li><a th:href="@{/part4.html}">오시는 길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a th:href="@{/machine.html}">사업분야</a>
+                  <ul>
+                    <li><a th:href="@{/machine.html}">기계가공</a></li>
+                    <li><a th:href="@{/space.html}">항공우주</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a th:href="@{/part5.html}">생산공정</a>
+                  <ul>
+                    <li><a th:href="@{/part5.html}">설비현황</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a th:href="@{/precision.html}">제품소개</a>
+                  <ul>
+                    <li><a th:href="@{/precision.html}">정밀부품가공</a></li>
+                    <li><a th:href="@{/design.html}">디자인 및 설계</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a th:href="@{#}">고객센터</a>
+                  <ul>
+                    <li><a th:href="@{#}">공지사항</a></li>
+                    <li><a th:href="@{#}">의뢰방법</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <br><br>
+    <div class="board_main">
+        <br>
+        <strong>공지사항</strong>
+        <br><br><br>
+        <p>정밀 가공, 완벽한 결과!</p>
+    </div>
+    <br><br>
+    <div class="board_insert_button">
+        <a href="/board-insert">게시글 작성</a>
+    </div>
+    <br><br>
+    <div class="board_header">
+        <div class="board_title">제목</div>
+        <div class="board_writer">글쓴이</div>
+        <div class="board_hit">비고</div>
+    </div>
+    <ul>
+        <li th:each="post : ${boardList}">
+            <div class="detail_box">
+                <div class="title_button">
+                    <a th:href="@{/board-detail/{id}(id = ${post.id})}">
+                        <span th:text="${post.title}"></span>
+                    </a>
+                </div>
+                <div class="writer_button">
+                    <span th:text="${post.writer}"></span>
+                </div>
+                <div class="update_button">
+                    <a th:href="@{/board-update/{id}(id = ${post.id})}" style="display:inline;">
+                        수정
+                    </a>
+                </div>
+                <div class="delete_button">
+                    <a th:href="@{/board-delete/{id}(id = ${post.id})}" style="display:inline;">
+                        삭제
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+	<footer>
+        <div class="inner">
+            <div class="logo">
+                <img src="./images/그림2.png" alt="신우시스템">
+            </div>
+
+            <div class="content-a">
+                <p class="but"><a href="./part4.html">오시는길</a></p>
+                <p>(주)신우시스템 &nbsp; | &nbsp; 경기도 용인시 처인구 남사면 원암로 341</p>
+                <p>Tel. +82-31-334-8417 &nbsp; | &nbsp;  Mobile. +82-10-3164-4486 &nbsp; | &nbsp; Fax. +82-31-624-3721</p>
+                <p>Email. sinwoosystem@daum.net</p>
+                <p class="highlight">Design Engineer of SHINWOO SYSTEM Co., Ltd.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
