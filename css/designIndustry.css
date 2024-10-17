@@ -1,0 +1,1084 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    /* width: 1000px; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.company-image {
+    width: 100%;
+    height: 500px;
+    color: white;
+}
+
+.company-image .image-container{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.company-image .image-container img{
+    width: 100%;
+    height: 500px;
+    display: block;
+    position: relative;
+    /* bottom: 180px; */
+}
+
+.text-overlay {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.container .image-container .text-a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 160px;
+    right: -195px;
+    width: 400px;
+}
+
+.container .image-container .text-b {
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 200px;
+    right: -235px;
+    width: 500px;
+}
+
+.menu-box {
+    width: 100%;
+    height: 80px;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #dddddd;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-box .inner {
+    display: flex;
+    /* max-width: 1100px; */
+    height: 80px;
+    margin: 0 auto;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.menu-box .inner > a {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+.menu-box .main {
+    list-style: none;
+    font-size: 0;
+    margin: 0;
+    padding-left: 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-box .main li {
+    display: flex;
+    height: 100%;
+}
+
+.menu-box .main li a {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding-right: 30px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.menu-box .main > li {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    font-size: 17px;
+}
+
+.menu-box .main > li > a {
+    color: black;
+    margin: 0;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.menu-box .main > li > a > span {
+    color: lightgrey;
+}
+
+.menu-box .main > li:hover > .sub {
+    display: block;
+    background-color: #F7F7F7;
+}
+
+.menu-box .sub {
+    position: relative;
+    display: none;
+    list-style: none;
+    z-index: 30;
+    width: 150px;
+    margin: 0;
+    padding: 15px;
+    
+}
+
+.menu-box .sub li a {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.menu-box .sub li a:hover {
+    color: #046cc4;
+}
+
+.contents {
+    /* padding-top: 80px; */
+    width: 100%;
+    height: auto;
+}
+.scroll-section{
+    width: 100%;
+    padding: 20px 0;
+    /* background-color: green; */
+}
+
+.scroll-section .section-info{
+    width: 100%;
+    height: 100px;
+}
+
+.scroll-section .section-info h1{
+    color: black;
+    position: relative;
+    top: 10px;
+}
+
+.scroll-section .section-info h2 {
+    color: lightgray;
+}
+
+.Confidential-product{
+    width: 100%;
+    height: 1920px;
+    /* background-color: #F7F7F7; */
+    /* background-color: yellow; */
+    position: relative;
+    display: flex;
+    top: 5px;
+}
+
+.product-container{
+    
+}
+
+.Confidential-product .slogan{
+    width: 600px;
+    height: 100px;
+    /* background-color: #046cc4; */
+    position: relative;
+    margin-right: 20px;
+    left: 100px;
+    top: 60px;
+    margin-bottom: 10px;
+}
+
+.Confidential-product .slogan h1{
+    color: black;
+}
+
+.Confidential-product .dog-horse-robot{
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    right: 550px;
+    top: 200px;
+}
+
+.Confidential-product .dog-horse-robot img{
+    position: relative;
+    left: 50px;
+    display: flex;
+    padding: 20px;
+    border-radius: 40px;
+}
+
+.Confidential-product .dog-horse-robot h2 {
+    color: black;
+    position: relative;
+    right: 20px;
+}
+.Confidential-product .dog-horse-robot h1 {
+    color: black;
+}
+
+.Confidential-product .dog-horse-robot h4 {
+    position: relative;
+    top: 10px;
+    color: grey;
+}
+
+.Confidential-product .articulated-robot{
+    width: 500px;
+    height: auto;
+    /* background-color: wheat; */
+    position: relative;
+    left: 100px;
+    bottom: 600px;
+}
+
+.Confidential-product .articulated-robot img {
+    width: 400px;
+    margin-bottom: 10px; /* 이미지 간 간격 추가 */
+    height: 200px;
+    border-radius: 30px;
+}
+
+.Confidential-product .articulated-robot h4{
+    color: grey;
+    position: relative;
+    margin: 10px;
+}
+
+.Confidential-product .articulated-robot h2{
+    color: black;
+}
+
+.Confidential-product .articulated-robot h1{
+    color: black;
+}
+
+.product-container .mobil-base{
+    /* background-color: #046cc4; */
+    width: 500px;
+    position: relative;
+    right: 550px;
+    bottom: 720px;
+}
+
+.product-container .mobil-base .mobil-base1{
+    position: relative;
+    top: 200px;
+    right: 40px;
+    /* margin: 20px; */
+}
+
+.product-container .mobil-base .mobil-base2{
+    position: relative;
+    top: 350px;
+    right: 240px;
+}
+
+.product-container .mobil-base .mobil-base3{
+    width: 150px;
+    position: relative;
+    left: 100px;
+    bottom: 300px;
+}
+
+.product-container .mobil-base .mobil-base4{
+    position: relative;
+    left: 60px;
+    top: 30px;
+}
+
+.product-container .mobil-base h2{
+    position: relative;
+    top: 50px;
+    right: 120px;
+    color: black;
+}
+
+.product-container .mobil-base h1{
+    color: black;
+    position: relative;
+    top: 70px;
+}
+.product-container .other-robot{
+    /* background-color: wheat; */
+    width: 500px;
+    position: relative;
+    right: -90px;
+    bottom: 1030px;
+}
+
+.product-container .other-robot .other-robot1{
+    position: relative;
+    right: 120px;
+    bottom: 35px;
+}
+
+.product-container .other-robot .other-robot2{
+
+}
+
+.product-container .other-robot .other-robot3{
+    position: relative;
+    left: 120px;
+    bottom: 550px;
+}
+
+.product-container .other-robot h2{
+    color: black;
+    position: relative;
+    bottom: 230px;
+}
+
+
+.product-info-WireRobot {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    
+}
+
+.product-info-WireRobot img {
+    width: 1300px;
+    height: auto;
+    position: relative;
+    top: 280;
+}
+
+.product-info-WireRobot .WireRobot4 {
+    width: 1300px;
+    height: 1000px;
+    position: relative;
+}
+
+.product-info-WireRobot .text-overlay{
+    position: relative;
+    /* top: 550px; */
+ 
+}
+
+.product-info-WireRobot .text-overlay > span {
+    color: white;
+    font-size: 60px;
+    position: relative;
+    top: 800px;
+    right: 1300px;
+}
+
+.product-info-WireRobot .text-overlay > h2 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    top: 780px;
+    right: 1300px;
+}
+
+/* .product-info-WireRobot .text-overlay > h1 {
+    color: black;
+    position: relative;
+    right: 1400px;
+    top: 620px;
+} */
+
+.product-info-WireRobot .text-overlay > h3 {
+    position: relative;
+    /* bottom: 1000px; */
+    top: 920px;
+    right: 1300px;
+    color:  white;
+}
+.product-info-WireRobot .text-overlay .explain{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 350px;
+    right: 510px;
+}
+
+.product-info-WireRobot .text-overlay .product {
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s;
+    opacity: 0.7;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+    right: 5px;
+    justify-content: center;
+}
+
+.product p {
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+    right: 10px; 
+    justify-content: center;
+}
+
+.product-info-lunarLanding{
+    /* background-color: #F7F7F7; */
+    /* background-color: green; */
+    width: 100%;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+
+.product-info-lunarLanding img {
+    width: 1100px;
+    height: auto;
+    position: relative;
+    top: 280;
+    right: 200px;
+}
+
+.product-info-lunarLanding .text-overlay {
+    position: absolute;
+    top: 1100px;
+    right: 500px;
+}
+
+.product-info-lunarLanding .text-overlay > h2 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 330px;
+    right: 350px;
+}
+
+.product-info-lunarLanding .text-overlay > p {
+    width: 800px;
+    color: white;
+    font-size: 45px;
+    position: relative;
+    bottom: 300px;
+    right: 550px;
+}
+
+.product-info-lunarLanding .text-overlay > h3 {
+    position: relative;
+    bottom: 50px;
+    right: 440px;
+    color:  white;
+}
+
+.product-info-lunarLanding .text-overlay .explain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 315px;
+    right: 570px;
+    /* right: 00px; */
+    /* background-color: gold; */
+}
+
+.product-info-lunarLanding .text-overlay .explain .product{
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    bottom: 950px;
+    left: 950px;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s;
+    opacity: 0.7;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+    right: 5px;
+    justify-content: center;
+}
+
+.product p {
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+    right: 10px; 
+    justify-content: center;
+}
+
+.product-info-obliqueRing{
+    /* background-color: #F7F7F7; */
+    /* background-color: red; */
+    width: 100%;
+    position: relative;
+    margin: 90px;
+}
+
+
+.product-info-obliqueRing img {
+    width: 990px;
+    height: auto;
+    position: relative;
+    top: 280;
+    right: 230px;
+}
+
+.product-info-obliqueRing .text-overlay {
+    position: absolute;
+    top: 1100px;
+}
+
+.product-info-obliqueRing .text-overlay > h2 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 330px;
+    right: 350px;
+}
+
+.product-info-obliqueRing .text-overlay > span {
+    color: white;
+    font-size: 45px;
+    position: relative;
+    bottom: 300px;
+    right: 150px;
+}
+
+.product-info-obliqueRing .text-overlay > h3 {
+    position: relative;
+    bottom: 50px;
+    right: 440px;
+    color:  white;
+}
+
+.product-info-obliqueRing .text-overlay .explain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 290px;
+    right: 475px;
+    /* right: 00px; */
+    /* background-color: gold; */
+}
+
+.product-info-obliqueRing .text-overlay .explain .product{
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    bottom: 950px;
+    left: 950px;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s;
+    opacity: 0.7;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+    right: 5px;
+    justify-content: center;
+}
+
+.product p {
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+    right: 10px; 
+    justify-content: center;
+}
+
+
+.product-info-wholeDirection{
+    /* background-color: #F7F7F7; */
+    /* background-color: green; */
+    width: 100%;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+
+.product-info-wholeDirection img {
+    width: 1100px;
+    height: auto;
+    position: relative;
+    top: 280;
+    right: 200px;
+}
+
+.product-info-wholeDirection .text-overlay {
+    position: absolute;
+    top: 1100px;
+}
+
+.product-info-wholeDirection .text-overlay > h2 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 330px;
+    right: 350px;
+}
+
+.product-info-wholeDirection .text-overlay > span {
+    color: white;
+    font-size: 45px;
+    position: relative;
+    bottom: 300px;
+    right: 150px;
+}
+
+.product-info-wholeDirection .text-overlay > h3 {
+    position: relative;
+    bottom: 50px;
+    right: 440px;
+    color:  white;
+}
+
+.product-info-wholeDirection .text-overlay .explain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 350px;
+    /* right: 00px; */
+    /* background-color: gold; */
+}
+
+.product-info-wholeDirection .text-overlay .explain .product{
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    bottom: 960px;
+    left: 590px;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s;
+    opacity: 0.7;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+    right: 5px;
+    justify-content: center;
+}
+
+.product p {
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+    right: 10px; 
+    justify-content: center;
+}
+
+.product-info-MRTRSlipRing{
+    /* background-color: #F7F7F7; */
+    width: 100%;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.product-info-MRTRSlipRing img {
+    width: 1100px;
+    height: auto;
+    position: relative;
+    top: 280;
+    right: 200px;
+}
+
+.product-info-MRTRSlipRing .text-overlay {
+    position: absolute;
+    top: 1100px;
+}
+
+.product-info-MRTRSlipRing .text-overlay > h2 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 330px;
+    right: 350px;
+}
+
+.product-info-MRTRSlipRing .text-overlay > span {
+    color: white;
+    font-size: 45px;
+    position: relative;
+    bottom: 300px;
+    right: 150px;
+}
+
+.product-info-MRTRSlipRing .text-overlay > h3 {
+    position: relative;
+    bottom: 50px;
+    right: 440px;
+    color:  white;
+}
+
+.product-info-MRTRSlipRing .text-overlay .explain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 350px;
+    /* right: 00px; */
+    /* background-color: gold; */
+}
+
+.product-info-MRTRSlipRing .text-overlay .explain .product{
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    bottom: 980px;
+    left: 630px;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s;
+    opacity: 0.7;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+    right: 5px;
+    justify-content: center;
+}
+
+.product p {
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+    right: 10px; 
+    justify-content: center;
+}
+
+.product-info-BLU{
+    /* background-color: #F7F7F7; */
+    width: 100%;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.product-info-BLU img {
+    width: 1100px;
+    height: auto;
+    position: relative;
+    top: 280;
+    right: 200px;
+}
+
+.product-info-BLU .text-overlay {
+    position: absolute;
+    top: 1100px;
+}
+
+.product-info-BLU .text-overlay > h2 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 330px;
+    right: 350px;
+}
+
+.product-info-BLU .text-overlay > span {
+    color: white;
+    font-size: 45px;
+    position: relative;
+    bottom: 300px;
+    right: 150px;
+}
+
+.product-info-BLU .text-overlay > h3 {
+    position: relative;
+    bottom: 50px;
+    right: 440px;
+    color:  white;
+}
+
+.product-info-BLU .text-overlay .explain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 350px;
+    /* right: 00px; */
+    /* background-color: gold; */
+}
+
+.product-info-BLU .text-overlay .explain .product{
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    bottom: 950px;
+    left: 585px;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s;
+    opacity: 0.7;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+    right: 5px;
+    justify-content: center;
+}
+
+.product p {
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+    right: 10px; 
+    justify-content: center;
+}
+
+.product-info-machineryVibration{
+    /* background-color: #F7F7F7; */
+    width: 100%;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.product-info-machineryVibration img {
+    width: 1100px;
+    height: auto;
+    position: relative;
+    top: 280;
+    right: 200px;
+}
+
+.product-info-machineryVibration .text-overlay {
+    position: absolute;
+    top: 1100px;
+}
+
+.product-info-machineryVibration .text-overlay > h2 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 330px;
+    right: 350px;
+}
+
+.product-info-machineryVibration .text-overlay > span {
+    color: white;
+    font-size: 45px;
+    position: relative;
+    bottom: 300px;
+    right: 150px;
+}
+
+.product-info-machineryVibration .text-overlay > h3 {
+    position: relative;
+    bottom: 50px;
+    right: 440px;
+    color:  white;
+}
+
+.product-info-machineryVibration .text-overlay .explain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 350px;
+    /* right: 00px; */
+    /* background-color: gold; */
+}
+
+.product-info-machineryVibration .text-overlay .explain .product{
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    bottom: 960px;
+    left: 625px;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s;
+    opacity: 0.7;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+    right: 5px;
+    justify-content: center;
+}
+
+.product p {
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+    right: 10px; 
+    justify-content: center;
+}
+
+.product-info-OLEDIVL{
+    /* background-color: #F7F7F7; */
+    width: 100%;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.product-info-OLEDIVL img {
+    width: 1100px;
+    height: auto;
+    position: relative;
+    top: 280;
+    right: 200px;
+}
+
+.product-info-OLEDIVL .text-overlay {
+    position: absolute;
+    top: 1100px;
+}
+
+.product-info-OLEDIVL .text-overlay > h2 {
+    color: white;
+    font-size: 30px;
+    position: relative;
+    bottom: 330px;
+    right: 350px;
+}
+
+.product-info-OLEDIVL .text-overlay > span {
+    color: white;
+    font-size: 45px;
+    position: relative;
+    bottom: 300px;
+    right: 150px;
+}
+
+.product-info-OLEDIVL .text-overlay > h3 {
+    position: relative;
+    bottom: 50px;
+    right: 440px;
+    color:  white;
+}
+
+.product-info-OLEDIVL .text-overlay .explain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 500px;
+    /* right: 00px; */
+    /* background-color: gold; */
+}
+
+.product-info-OLEDIVL .text-overlay .explain .product{
+    background-color: #333;
+    border-radius: 10px;
+    position: relative;
+    bottom: 600px;
+    left: 570px;
+    padding: 20px;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    transition: transform 0.3s;
+    opacity: 0.7;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 60px;
+    right: 5px;
+    justify-content: center;
+}
+
+.product p {
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+    right: 10px; 
+    justify-content: center;
+}
