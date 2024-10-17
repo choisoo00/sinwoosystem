@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>(주)신우시스템</title>
+    <link href="css/board-list.css" rel="stylesheet">
+</head>
+<body>
+    <br><br>
+    <div class="board_main">
+        <br>
+        <strong>공지사항</strong>
+        <br><br><br>
+        <p>정밀 가공, 완벽한 결과!</p>
+    </div>
+    <br><br>
+    <div class="board_insert_button">
+        <a href="/board-insert">게시글 작성</a>
+    </div>
+    <br><br>
+    <div class="board_header">
+        <div class="board_title">제목</div>
+        <div class="board_writer">글쓴이</div>
+        <div class="board_hit">비고</div>
+    </div>
+    <ul>
+        <li th:each="post : ${boardList}">
+            <div class="detail_box">
+                <div class="title_button">
+                    <a th:href="@{/board-detail/{id}(id = ${post.id})}">
+                        <span th:text="${post.title}"></span>
+                    </a>
+                </div>
+                <div class="writer_button">
+                    <span th:text="${post.writer}"></span>
+                </div>
+                <div class="update_button">
+                    <a th:href="@{/board-update/{id}(id = ${post.id})}" style="display:inline;">
+                        수정
+                    </a>
+                </div>
+                <div class="delete_button">
+                    <a th:href="@{/board-delete/{id}(id = ${post.id})}" style="display:inline;">
+                        삭제
+                    </a>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+<!--<div class="pagination">-->
+<!--    <span th:if="${currentPage > 0}">-->
+<!--        <a th:href="@{/board-list(page=${currentPage - 1})}">이전</a>-->
+<!--    </span>-->
+<!--    <span th:each="i : ${#numbers.range(0, totalPages - 1)}">-->
+<!--        <a th:href="@{/board-list(page=${i})}" th:text="${i + 1}"></a>-->
+<!--    </span>-->
+<!--    <span th:if="${currentPage < totalPages - 1}">-->
+<!--        <a th:href="@{/board-list(page=${currentPage + 1})}">다음</a>-->
+<!--    </span>-->
+<!--</div>-->
+</body>
+</html>

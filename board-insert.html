@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>(주)신우시스템</title>
+    <link href="css/board-insert.css" rel="stylesheet">
+</head>
+<body>
+    <br><br>
+    <div class="board_main">
+        <br>
+        <strong>공지사항</strong>
+        <br><br><br>
+        <p>정밀 가공, 완벽한 결과!</p>
+    </div>
+    <form action="/board/insert" method="post">
+        제목: <input type="text" name="title"><br>
+        작성자: <input type="text" name="writer"><br>
+        내용: <input type="text" name="content"><br>
+        <input type="submit" value="전송"/>
+    </form>
+    <div class="board_list_button">
+        <a href="/board-list">목록</a>
+    </div>
+</body>
+</html>

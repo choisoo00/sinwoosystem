@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>(주)신우시스템</title>
+    <link href="css/board-delete.css" rel="stylesheet">
+</head>
+<body>
+    <div class="board_main">
+        <br>
+        <strong>공지사항</strong>
+        <br><br><br>
+        <p>정밀 가공, 완벽한 결과!</p>
+    </div>
+    <ul>
+        <li>
+            <span th:text="${title}"></span>
+            <p>정말로 삭제하시겠습니까?</p>
+            <form th:action="@{/board-delete/{id}(id=${board.id})}" method="post" style="display:inline;">
+                제목: <input type="text" th:value="${board.title}" name="title" />
+                작성자: <input type="text" th:value="${board.writer}" name="writer" />
+                내용: <br><textarea name="content" th:text="${board.content}"></textarea>
+                <br>
+                <button type="submit">삭제</button>
+            </form>
+        </li>
+    </ul>
+    <div class="board_list_button">
+        <a href="/board-list">목록</a>
+    </div>
+</body>
+</html>
