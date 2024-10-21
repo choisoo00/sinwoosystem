@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0px;
+}
+.container {
+    position: relative;
+    background-color: white;
+}
+
+.image-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .image-container .text-a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+.container .image-container .text-b {
+    font-size: 65px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+}
+/* --------------------------------------------- */
+.menu-box {
+    width: 100%;
+    height: 80px;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #dddddd;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-box .inner {
+    display: flex;
+    /* max-width: 1100px; */
+    height: 80px;
+    margin: 0 auto;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.menu-box .inner > a {
+    width: 24px;
+    height: 24px;
+    color: black;
+}
+
+.menu-box .main {
+    list-style: none;
+    font-size: 0;
+    margin: 0;
+    padding-left: 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-box .main li {
+    display: flex;
+    height: 100%;
+}
+
+.menu-box .main li a {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding-right: 30px;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.menu-box .main > li {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+    font-size: 17px;
+}
+
+.menu-box .main > li > a {
+    color: black;
+    margin: 0;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.menu-box .main > li > a > span {
+    color: lightgrey;
+}
+
+.menu-box .main > li:hover > .sub {
+    display: block;
+    background-color: #F7F7F7;
+}
+
+.menu-box .sub {
+    position: relative;
+    display: none;
+    list-style: none;
+    z-index: 30;
+    width: 150px;
+    margin: 0;
+    padding: 15px;
+
+}
+
+.menu-box .sub li a {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+.menu-box .sub li a:hover {
+    color: #046cc4;
+}
+
+/* --------------------------------------------- */
+.board_main strong {
+    font-size: 24px; /* 글씨 크기 */
+    font-weight: bold; /* 두껍게 */
+    color: #343a40; /* 텍스트 색상 (어두운 회색) */
+}
+
+.board_main p {
+    font-size: 18px; /* 글씨 크기 */
+    font-weight: bold; /* 두껍게 */
+    color: #007bff; /* 텍스트 색상 (파란색) */
+}
+
+.board_insert_button {
+    display: flex; /* Flexbox 사용 */
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    margin: 20px 0; /* 위아래 여백 추가 (원하는 만큼 조절) */
+}
+
+.board_insert_button a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    background-color: #007bff; /* 배경 색상 */
+    color: white; /* 글씨 색상 */
+    padding: 10px 15px; /* 패딩 추가 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    transition: background-color 0.3s; /* 배경색 변화 애니메이션 */
+}
+
+.board_list_button a:hover {
+    background-color: #0056b3; /* 호버 시 배경색 변화 */
+}
+.board_list_button {
+    display: flex; /* Flexbox 사용 */
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    margin: 20px 0; /* 위아래 여백 추가 (원하는 만큼 조절) */
+}
+
+.board_list_button a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    background-color: #007bff; /* 배경 색상 */
+    color: white; /* 글씨 색상 */
+    padding: 10px 15px; /* 패딩 추가 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    transition: background-color 0.3s; /* 배경색 변화 애니메이션 */
+}
+
+.board_list_button a:hover {
+    background-color: #0056b3; /* 호버 시 배경색 변화 */
+}
+/* board_main 스타일 */
+.board_main {
+    max-width: 800px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 중앙 정렬 */
+    padding: 20px; /* 내부 여백 */
+    background-color: #f9f9f9; /* 배경 색상 */
+    border: 1px solid #ddd; /* 경계선 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+/* 제목 스타일 */
+.board_main strong {
+    font-size: 24px; /* 제목 크기 */
+    font-weight: bold; /* 굵게 */
+    color: #333; /* 텍스트 색상 */
+    display: block; /* 블록 요소로 변경 */
+    margin-bottom: 20px; /* 아래 여백 */
+}
+
+/* 단락 스타일 */
+.board_main p {
+    font-size: 16px; /* 글자 크기 */
+    line-height: 1.6; /* 줄 높이 */
+    color: #666; /* 텍스트 색상 */
+    margin-bottom: 15px; /* 아래 여백 */
+}
+
+/* board_detail 스타일 */
+.board_detail {
+    max-width: 800px; /* 최대 너비 설정 */
+    margin: 20px auto; /* 중앙 정렬, 위 여백 추가 */
+    padding: 20px; /* 내부 여백 */
+    background-color: #ffffff; /* 배경 색상 */
+    border: 1px solid #ddd; /* 경계선 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+/* h1 스타일 */
+.board_detail h1 {
+    font-size: 28px; /* 제목 크기 */
+    font-weight: bold; /* 굵게 */
+    color: #2c3e50; /* 텍스트 색상 */
+    margin-top: 0; /* 위 여백 없앰 */
+    margin-bottom: 20px; /* 아래 여백 */
+}
+
+/* 작성자 및 내용 텍스트 스타일 */
+.board_detail p {
+    font-size: 16px; /* 글자 크기 */
+    line-height: 1.6; /* 줄 높이 */
+    color: #444; /* 텍스트 색상 */
+    margin-bottom: 10px; /* 아래 여백 */
+}
+
+/* span 스타일 */
+.board_detail span {
+    font-weight: normal; /* 일반 굵기 */
+    color: #333; /* 텍스트 색상 */
+}
