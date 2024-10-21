@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>(주)신우시스템</title>
+    <link th:href="@{/css/header.css}" rel="stylesheet">
+    <link th:href="@{/css/footer.css}" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/그림1.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link th:href="@{/css/board-detail.css}" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="sub-menu">
+        <ul class="menu">
+            <li><a th:href="@{/main}">Home</a></li>
+            <li><a th:href="@{/login}">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <div class="max-width-wrapper">
+            <a th:href="@{/main}">
+                <img th:src="@{/images/new_logo3.png}" alt="신우시스템" />
+            </a>
+
+            <div class="main-menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a th:href="@{/part1}">신우시스템</a>
+                            <ul>
+                                <li><a th:href="@{/part1}">CEO인사말</a></li>
+                                <li><a th:href="@{/part2}">회사개요</a></li>
+                                <li><a th:href="@{/part3}">연혁</a></li>
+                                <li><a th:href="@{/part4}">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a th:href="@{/machine}">사업분야</a>
+                            <ul>
+                                <li><a th:href="@{/machine}">기계가공</a></li>
+                                <li><a th:href="@{/space}">항공우주</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a th:href="@{/part5}">생산공정</a>
+                            <ul>
+                                <li><a th:href="@{/part5}">설비현황</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a th:href="@{/precision}">제품소개</a>
+                            <ul>
+                                <li><a th:href="@{/precision}">정밀부품가공</a></li>
+                                <li><a th:href="@{/design}">디자인 및 설계</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a th:href="@{#}">고객센터</a>
+                            <ul>
+                                <li><a th:href="@{/board-list}">게시판·기타</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</header>
+<br><br>
+<!-- --------------------------------------------------- -->
+<div class="container">
+    <div class="image-group">
+        <div class="image-container">
+            <img th:src="@{/images/board.webp}" alt="게시판">
+            <div class="text-overlay">
+                <p class="text-a">Notice Board</p>
+                <p class="text-b">게시판</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menu-box">
+    <div class="inner">
+        <a th:href="@{/main}">
+            <span class="material-symbols-outlined">home</span>
+        </a>
+
+        <ul class="main">
+            <li>
+                <a th:href="@{/precision}">
+                    제품소개
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </a>
+                <ul class="sub">
+                    <li><a th:href="@{/part1}">신우시스템</a></li>
+                    <li><a th:href="@{/machine}">사업분야</a></li>
+                    <li><a th:href="@{/part5}">생산공정</a></li>
+                    <li><a th:href="@{/precision}">제품소개</a></li>
+                    <li><a th:href="@{#}">고객센터</a></li>
+                </ul>
+            </li>
+            <li>
+                <a th:href="@{/precision}">
+                    정밀부품가공
+                    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </a>
+                <ul class="sub">
+                    <li><a th:href="@{/precision}">정밀부품가공</a></li>
+                    <li><a th:href="@{/design}">디자인 및 설계</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- --------------------------------------------------- -->
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="board_main">
+    <br>
+    <strong>정밀 가공, 완벽한 결과!</strong>
+    <br><br><br>
+    <p>견적 의뢰 및 자주 묻는 질문 안내</p>
+    <p>견적 요청 방법: 도면과 요구사항을 포함하여 이메일로 발송해 주세요.</p>
+    <p>처리 기간: 의뢰 후 평균 3일 내 견적을 제공합니다.</p>
+    <p>필요 정보: 재료, 공정 방식, 수량을 명확히 기재해 주세요.</p>
+    <p>추가 비용: 긴급 요청 시 추가 비용이 발생할 수 있습니다.</p>
+    <p>문의 사항: 기타 문의는 고객센터로 연락 바랍니다.</p>
+    <br>
+</div>
+<div class="board_detail">
+    <h1 th:text="${board.title}"></h1>
+    <p>작성자: <span th:text="${board.writer}"></span></p>
+    <p>내용: <span th:text="${board.content}"></span></p>
+</div>
+
+<div class="board_list_button">
+    <a href="/board-list">목록</a>
+</div>
+<footer>
+    <div class="inner">
+        <div class="logo">
+            <img th:src="@{/images/그림2.png}" alt="신우시스템">
+        </div>
+
+        <div class="content-a">
+            <p class="but"><a href="./part4">오시는길</a></p>
+            <p>(주)신우시스템 &nbsp; | &nbsp; 경기도 용인시 처인구 남사면 원암로 341</p>
+            <p>Tel. +82-31-334-8417 &nbsp; | &nbsp;  Mobile. +82-10-3164-4486 &nbsp; | &nbsp; Fax. +82-31-624-3721</p>
+            <p>Email. sinwoosystem@daum.net</p>
+            <p class="highlight">Design Engineer of SHINWOO SYSTEM Co., Ltd.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
