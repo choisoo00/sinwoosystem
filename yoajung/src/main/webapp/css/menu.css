@@ -1,0 +1,461 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /* font-family: Arial, sans-serif;
+    font-family: 'JalnanGothic', sans-serif; */
+}
+
+.menustore_page {
+    position: relative;
+    
+
+}
+
+.menustore_page .menustore_wrap {
+
+}
+
+.menustore_page .menustore_wrap .section1 {
+    color: white;
+
+}
+
+.menustore_page .menustore_wrap .section1 .background {
+    z-index: 1;
+    position: absolute;
+    width: 1520px;
+    height: 280px;
+
+}
+
+.menustore_page .menustore_wrap .section1 .bar {
+    z-index: 3;
+    position: absolute;
+    margin-left: 48.5%;
+    margin-top: 6%;
+}
+
+.menustore_page .menustore_wrap .section1 .english {
+    z-index: 3;
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 7%;
+    font-size: 40px;
+    font-family: 'JalnanGothic', sans-serif;
+    font-weight: normal;
+    font-style: normal
+
+
+}
+
+.menustore_page .menustore_wrap .section1 .korean {
+    z-index: 3;
+    position: absolute;
+    margin-left: 47%;
+    margin-top: 10%;
+
+
+}
+
+.menustore_page .menustore_wrap .section2 {
+    position: relative;
+    display: flex;
+    left: 648px;
+    top: 300px
+}
+
+.menustore_page .menustore_wrap .section2 .menu {
+    color: #000;
+    font-weight: bold;
+
+}
+
+.menustore_page .menustore_wrap .section2 p {
+    margin-left: 80px;
+    margin-top: 0px;
+
+}
+
+.menustore_page .menustore_wrap .section2 .store {
+    margin-left: 80px;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.menustore_page .menustore_wrap .section2 .menu:hover {
+    color: palevioletred;
+}
+
+.menustore_page .menustore_wrap .section2 .store:hover {
+    color: palevioletred;
+}
+
+.menustore_page .menustore_wrap .section3 {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menulogo {
+    position: relative;
+    left: 660px;
+    top: 400px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menulogo img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menucategory {
+    display: flex;
+    position: relative;
+    left: 573px;
+    top: 450px;
+}
+
+.menustore_page .menustore_wrap .section3 .menucategory .icecream {
+    font-weight: bold;
+    color: #000;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menucategory p {
+    margin-left: 70px;
+    margin-top: 0px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menucategory .greekyogurt {
+    font-weight: bold;
+    color: #000;
+    margin-left: 70px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage {
+    margin-left: 200px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 {
+    display: flex;
+    margin-top: 500px;
+    margin-left: 210px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 img {
+    width: 150px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_1 {
+    
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_1 img {
+    /* width: 200px; */
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_1 p {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_2 {
+    margin-left: 35px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_2 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_2 p {
+    margin-left: 45px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_3 {
+    margin-left: 35px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_3 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_3 p {
+    margin-left: 50px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_4 {
+    margin-left: 35px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_4 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image1 .image1_4 p {
+    margin-left: 50px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 {
+    display: flex;
+    margin-left: 205px;
+    position: absolute;
+    top: 900px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 img {
+    width: 150px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_1 {
+    
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_1 img {
+    
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_1 p {
+    margin-left: 55px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_2 {
+    margin-left: 40px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_2 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_2 p {
+    margin-left: 55px;
+   
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_3 {
+    margin-left: 40px;
+    
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_3 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_3 p {
+    margin-left: -10px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_4 {
+    margin-left: 40px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_4 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image2 .image2_4 p {
+    margin-left: 13px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 {
+    display: flex;
+    margin-left: 200px;
+    position: absolute;
+    top: 1180px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 img {
+    width: 150px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_1 {
+    
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_1 img {
+    
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_1 p {
+    margin-left: 25px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_2 {
+    margin-left: 43px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_2 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_2 p {
+    margin-left: 25px;
+   
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_3 {
+    margin-left: 43px;
+    
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_3 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_3 p {
+    margin-left: 25px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_4 {
+    margin-left: 43px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_4 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image3 .image3_4 p {
+    margin-left: 25px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 {
+    display: flex;
+    margin-left: 205px;
+    position: absolute;
+    top: 1460px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 img {
+    width: 150px;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_1 {
+    
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_1 img {
+    
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_1 p {
+    margin-left: 5px;
+    width: 130px;
+    text-align: center;
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_2 {
+    margin-left: 38px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_2 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_2 p {
+    margin-left: 0px;
+    width: 140px;
+    text-align: center;
+   
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_3 {
+    margin-left: 45px;
+    
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_3 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_3 p {
+    margin-left: -2px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_4 {
+    margin-left: 42px;
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_4 img {
+
+}
+
+.menustore_page .menustore_wrap .section3 .menuimage .image4 .image4_4 p {
+    margin-left: 10px;
+    width: 130px;
+    text-align: center;
+}
+
+.menustore_page2 {
+    position: relative;
+    left: 630px;
+    bottom: -1000px;
+
+}
+
+.menustore_page2 .menustore_wrap2 {
+
+}
+
+.menustore_page2 .menustore_wrap2 .store_map {
+
+}
+
+.menustore_page2 .menustore_wrap2 .store_map .storelogo {
+
+}
+
+.menustore_page2 .menustore_wrap2 .store_map .storelogo img {
+
+}
+
+.menustore_page2 .menustore_wrap2 .store_map .storelogo p {
+    margin-left: -48px;
+
+}
+
+.menustore_page2 .menustore_wrap2 .store_map .map {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+
+}
+
+.menustore_page2 .menustore_wrap2 .store_map .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    border: 0;
+
+}

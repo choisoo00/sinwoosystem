@@ -1,0 +1,235 @@
+@charset "UTF-8";
+.COMMUNITY{
+    /* background-color: #f00; */
+    width: 1250px;
+}
+
+.COMMUNITY .community-wrap{
+    /* background-color: antiquewhite; */
+    width: 1250px;
+    
+}
+
+.COMMUNITY .community-wrap .yogurt{
+    width: 1250px;
+    height: 250px;
+}
+
+.COMMUNITY .community-wrap .community-center{
+    /* background-color: aqua; */
+    width: 850px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    left: 100px;
+    
+}
+
+.COMMUNITY .community-wrap .community-center .community-title{
+    /* background-color: green; */
+    /* width: 850px;
+    height: 250px; */
+}
+
+
+
+.COMMUNITY .community-wrap .community-center .community-title .community{
+    /* background-color: yellowgreen; */
+    width: 300px;
+    /* height: 150px; */
+    position: relative;
+    bottom: 200px;
+    left: 250px;
+}
+
+.COMMUNITY .community-wrap .community-center .community-title .community > img{
+    position: relative;
+    left: 130px;
+    top: 20px;
+    /* justify-content: center; */
+}
+
+.COMMUNITY .community-wrap .community-center .community-title .community span{
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    left: 40px;
+}
+
+.COMMUNITY .community-wrap .community-center .community-title .community p{
+    color: white;
+    /* justify-content: center; */
+    font-weight: bold;
+    position: inherit;
+    left: 140px;
+    top: 60px;
+}
+
+
+
+.COMMUNITY .community-wrap .community-center .community-contents{
+    /* background-color: #f00; */
+    width: 850px;
+    position: inherit;
+    bottom: 42px;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-menu {
+    /* background-color: aliceblue; */
+    width: 850px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    color: #222;
+    font-weight: bold;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-menu .comu{
+  /* background-color: orangered; */
+  width: 100px;
+  height: 40px;
+  border-right: lightgrey solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-menu .event{
+  /* background-color: olivedrab; */
+  width: 100px;
+  height: 40px;
+  border-right: lightgrey solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-menu .FAQ {
+  /* background-color: orange; */
+  width: 100px;
+  height: 40px;
+  border-right: lightgrey solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-menu .sound-of-customer {
+  /* background-color: burlywood; */
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-comu {
+    /* background-color: aquamarine; */
+    width: 850px;
+    height: 100px;
+    display: flex;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-comu .logo{
+  position: relative;
+  left: 370px;
+  top: 30px;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-comu .logo img{
+  width: 25px;
+  height: 30px; 
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-comu h1 {
+  color: black;
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+  right: -380px;
+  font-weight: bold;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-content {
+    /* background-color: #8123; */
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-content .top{
+    background-color: azure;
+    width: 850px;
+    height: 80px;
+    display: flex;
+    border-width: 1px 0 1px 0;
+    border-color: black;
+    border-style: solid;
+    font-weight: bold;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-content .top .number{
+  width: 35%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-content .top .writer{
+  width: 15%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-content .top .title{
+  width: 50%;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-content .bottom{
+    /* background-color: yellowgreen; */
+    width: 850px;
+    height: 60px;
+    display: flex;
+    /* height: 540px; */
+    cursor: pointer;
+    color: grey
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-content .bottom .first {
+  width: 35%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-content .bottom .second {
+  width: 15%;
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.COMMUNITY .community-wrap .community-center .community-contents .community-content .bottom .third {
+  width: 50%;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* 헤드, 헤더부분 */
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .header_logo2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    max-height: 50px;
+  }
+  
+  .header_menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .header_menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  /* .header_menu a.cart_immage img {
+    vertical-align: middle;
+  }
+
+  .header_menu :nth-child(7) {
+    color: palevioletred;
+  } */
+
+  .header_menu .shoppingmall_image {
+    vertical-align: middle;
+  }
+  
+  .header_menu .shoppingmall_image:hover{
+    cursor: pointer;
+  }
+
+  .header_menu .shoppingmall_image .shoppingmall{
+    color: palevioletred;
+  }
+  
+  .header_menu a:hover {
+    color: #f00;
+  }
+
+
+/* 여기까지 헤드, 헤더 */
